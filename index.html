@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Bem-vindo ao Meu Site</h1>
+      <p>
+        Oi! Esta página é um espaço pra você me conhecer melhor — um pouco sobre
+        mim, o que gosto e minha caminhada rumo a me tornar uma dev Full Stack.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Missão</h2>
+        <p class="destaque">
+          Minha missão é aprender continuamente e me desenvolver como
+          profissional da área de tecnologia, buscando dominar tanto o front-end
+          quanto o back-end para criar soluções completas, úteis e acessíveis.
+        </p>
+      </section>
+
+      <section>
+        <h2>Visão</h2>
+        <p id="importante">
+          Tornar-me uma desenvolvedora Full Stack reconhecida pela qualidade dos
+          meus projetos, contribuindo com inovação e impacto positivo no mundo
+          digital.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Verônica Oliveira. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu-list");
+      menu.classList.toggle("ativo");
+    }
+  </script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Listas e Navegação</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Sobre mim</h1>
+    </header>
+
+    <main class="mainListas">
+      <section class="sobre-mim">
+        <h2>Meus Hobbies</h2>
+        <ul>
+          <li>Ler</li>
+          <li>Assistir filmes e séries</li>
+          <li>Ir a academia</li>
+          <li>Fazer crochê / tricô</li>
+          <li>Cozinhar</li>
+        </ul>
+      </section>
+
+      <section class="sobre-mim">
+        <h2>Receita Mousse de Limão</h2>
+        <ol>
+          <li>No liquidificador, coloque uma lata de leite condensado.</li>
+          <li>Adicione uma lata de creme de leite (sem soro).</li>
+          <li>
+            Esprema o suco de 2 a 3 limões (a gosto) e adicione à mistura.
+          </li>
+          <li>Bata tudo até ficar bem cremoso.</li>
+          <li>Despeje em um recipiente e acrescente raspas de limão.</li>
+          <li>Leve à geladeira por pelo menos 2 horas.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Meus filmes e séries favoritos</h2>
+        <div class="grid-container">
+          <figure class="item" id="item1">
+            <img src="assets/Django-Livre.jpg" alt="Django Livre" />
+            <figcaption>Django Livre</figcaption>
+          </figure>
+          <figure class="item" id="item2">
+            <img src="assets/Kill-Bill.jpg" alt="Kill Bill - Volume 1" />
+            <figcaption>Kill Bill - Volume 1</figcaption>
+          </figure>
+          <figure class="item" id="item3">
+            <img src="assets/seinfeld.jpg" alt="Seinfield" />
+            <figcaption>Seinfield</figcaption>
+          </figure>
+          <figure class="item" id="item4">
+            <img src="assets/sons-of-anarchy.jpg" alt="Sons of Anarchy" />
+            <figcaption>Sons of Anarchy</figcaption>
+          </figure>
+          <figure class="item" id="item5">
+            <img src="assets/from.jpg" alt="From" />
+            <figcaption>From</figcaption>
+          </figure>
+          <figure class="item" id="item6">
+            <img src="assets/somebody-feed-phil.jpg" alt="Somebody Feed Phil" />
+            <figcaption>Somebody Feed Phil</figcaption>
+          </figure>
+          <figure class="item" id="item7">
+            <img src="assets/master-chef.jpg" alt="Master Chef Brasil" />
+            <figcaption>Master Chef Brasil</figcaption>
+          </figure>
+          <figure class="item" id="item8">
+            <img src="assets/cobra-kai.jpg" alt="Cobra Kai" />
+            <figcaption>Cobra Kai</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <nav class="nav-links">
+      <a href="https://www.google.com" target="_blank">Google</a> |
+      <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+    </nav>
+
+    <footer>
+      <p>&copy; 2025 - Verônica Oliveira. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu-list");
+      menu.classList.toggle("ativo");
+    }
+  </script>
+</html>

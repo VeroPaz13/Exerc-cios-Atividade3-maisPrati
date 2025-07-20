@@ -1,0 +1,242 @@
+:root {
+  --azul-principal: #1e3a8a;
+  --azul-claro: #3b82f6;
+  --fundo-leve: #437dda56;
+  --cinza-claro: #f3f4f6;
+  --cinza-medio: #d1d5db;
+  --cinza-escuro: #374151;
+  --branco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header,
+main,
+footer {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 960px;
+  background-color: var(--branco);
+}
+
+header {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+}
+
+footer {
+  background-color: var(--cinza-medio);
+  color: var(--cinza-escuro);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--azul-claro);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.destaque {
+  font-style: italic;
+  background-color: var(--fundo-leve);
+  color: var(--cinza-escuro);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#importante {
+  border-top: 5px solid var(--azul-principal);
+  color: var(--cinza-escuro);
+  padding-top: 0.5rem;
+}
+
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+nav a {
+  color: var(--azul-claro);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#tituloFormulario {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: var(--cinza-escuro);
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--branco);
+  border: 1px solid var(--cinza-medio);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0.6rem;
+  border: 1px solid var(--cinza-medio);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--azul-principal);
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.item {
+  background-color: var(--branco);
+  border: 1px solid var(--cinza-medio);
+  border-radius: 6px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--cinza-medio);
+  color: var(--azul-principal);
+  border-radius: 8px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--azul-principal);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.menu ul li a {
+  color: var(--azul-principal);
+  text-decoration: none;
+}
+
+.sobre-mim {
+  background-color: var(--branco);
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.grid-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+img {
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.item {
+  background-color: var(--cinza-escuro);
+  color: var(--cinza-claro);
+}
+.mainListas {
+  color: var(--cinza-escuro);
+  background-color: var(--cinza-medio);
+}
+
+@media (max-width: 600px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cinza-medio);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding-left: 1.5rem;
+    border-radius: 6px;
+    z-index: 10;
+  }
+  .menu ul.ativo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.nav-links {
+  text-align: center;
+}
